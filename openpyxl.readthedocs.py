@@ -142,3 +142,21 @@ wb = load_workbook(filename = 'empty_book.xlsx')
 sheet_ranges = wb['range names']
 print(sheet_ranges['D18'].value)
 
+
+# adds
+
+#merge cells 
+sheetname.merge_cells("A2:H2")
+
+# Center-align the content of the cell
+sheetname['A2'].alignment = Alignment(horizontal='center', vertical='center')
+
+# Apply bold formatting to the cell
+bold_font = Font(bold=True)
+sheetname['A2'].font = bold_font
+
+#cell_fill = PatternFill(start_color="FF0000", end_color="FF0000", fill_type="solid")  # red
+
+# Add themed text to the column
+data_font = Font(color="FF0000")
+
